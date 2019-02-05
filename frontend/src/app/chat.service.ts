@@ -99,15 +99,4 @@ export class ChatService {
   getTypingUsers(){
     return this.typingUsers;
   }
-
-
-  /*onUserJoined(){
-    return this.userJoinedSubject;
-  }
-  onUserLeft(){
-    return this.userLeftSubject;
-  }*/
-  /*cancelSubscription(roomId = this.GENERAL_ROOM_ID){
-    this.currentUser.roomSubscriptions[roomId].cancel();
-  }*/    
 }

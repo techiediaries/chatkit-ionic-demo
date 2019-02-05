@@ -16,9 +16,7 @@ export class ChatPage implements OnInit {
   chatMessage: string = "";
   attachment: File = null;
   @ViewChild('scrollArea') content: Content;
-  //@ViewChild('messageList') messageListElemenet;
 
-  //private mutationObserver: MutationObserver;
   
   constructor(private router: Router, private chatService: ChatService, private authService: AuthService) { }
 

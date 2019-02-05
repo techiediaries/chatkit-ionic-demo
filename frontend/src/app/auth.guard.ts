@@ -14,7 +14,6 @@ export class AuthGuard implements CanActivateChild {
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
       
     if(this.authService.isLoggedIn()){
-      console.log('logged in!');
       return true;
     }
     else{
@@ -22,11 +21,9 @@ export class AuthGuard implements CanActivateChild {
         this.authService.checkTokenExists().then((tokenExists)=>{
           
           if(tokenExists){
-            console.log("token exists, not going to login");
             resolve(true);
           }
           else{
-            console.log("no token, going to login");
             this.router.navigateByUrl('/login');
             resolve(false);
           }

@@ -34,7 +34,6 @@ export class AuthService {
       })
     );
   }
-  //1 add a logged in property and logout() method
 
   async logout(){
     await this.storage.remove("ACCESS_TOKEN");
@@ -44,9 +43,6 @@ export class AuthService {
     this.authState.next(false); 
   }
 
-  /*getAuthState(){
-    return this.authState.asObservable();
-  }*/
   checkTokenExists(): Promise<boolean>{
     console.log("Checking token..");
 
