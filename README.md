@@ -14,3 +14,5 @@ For step by step tutorials on how to create this project, you can read:
 
 [Building a mobile app with Nest.js, Ionic 4 and Chatkit - Part 2: Build the frontend](https://pusher.com/tutorials/chat-nest-ionic-part-2)
 
+[Adding authentication, typing indicators and file attachments to your Ionic 4 chat app](https://pusher.com/tutorials/ionic-chat-auth-attach)
+
